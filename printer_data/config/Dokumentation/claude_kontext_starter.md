@@ -37,13 +37,12 @@ Bitte lies zuerst diese drei Konfigurationsdateien, bevor wir anfangen:
 ## 🎯 Laufende Projekte
 
 - **Intelligentes Purge-Volumen** (Farbe + Material-Aufschlag beim Toolchange)
-- https://github.com/immergut1961/NPT4/blob/main/printer_data/config/Dokumentation/Projekte/intelligentes_purge_volumen.md
-  Status: ✅ produktiv im Einsatz, verifiziert
-  – Override von `_MMU_PURGE` in `mmu/optional/mmu_eigene_macros.cfg`
-  – Persistenz über `[save_variables]` → `mmu/mmu_vars.cfg`
-  – **Wichtiger Bugfix:** `gate_material`/`gate_color` immer über `printer.mmu.gate` indizieren, nie über `printer.mmu.tool` (bei 1 Hotend ist `tool` immer `0`, das Gate wechselt aber je nach Filament)
-  – Details & aktueller Code: siehe Projektdokument „intelligentes_purge_volumen.md“
-
+  - Status: ✅ produktiv im Einsatz, verifiziert
+  - Projektdokument: https://github.com/immergut1961/NPT4/blob/main/printer_data/config/Dokumentation/Projekte/intelligentes_purge_volumen.md
+  - Override von `_MMU_PURGE` in `mmu/optional/mmu_eigene_macros.cfg`
+  - Persistenz über `[save_variables]` → `mmu/mmu_vars.cfg`
+  - **Wichtiger Bugfix:** `gate_material`/`gate_color` immer über `printer.mmu.gate` indizieren, nie über `printer.mmu.tool` (bei 1 Hotend ist `tool` immer `0`, das Gate wechselt aber je nach Filament)
+  
 ---
 
 
