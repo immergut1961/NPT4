@@ -37,6 +37,7 @@ Bitte lies zuerst diese drei Konfigurationsdateien, bevor wir anfangen:
 ## 🎯 Laufende Projekte
 
 - **Intelligentes Purge-Volumen** (Farbe + Material-Aufschlag beim Toolchange)
+  - https://github.com/immergut1961/NPT4/blob/main/printer_data/config/Dokumentation/Projekte/intelligentes_purge_volumen.md
   – Status: ✅ produktiv im Einsatz, verifiziert
   – Override von `_MMU_PURGE` in `mmu/optional/mmu_eigene_macros.cfg`
   – Persistenz über `[save_variables]` → `mmu/mmu_vars.cfg`
