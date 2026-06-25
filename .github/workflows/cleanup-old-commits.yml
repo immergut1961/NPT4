@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -32,8 +32,8 @@ jobs:
           
           git filter-repo --force \
             --commit-filter '
-              import os
-              timestamp = int(os.environ.get("GIT_COMMIT_DATE", 0))
+              import subprocess
+              timestamp = int(subprocess.check_output(["git", "log", "-1", "--format=%at", "HEAD"]).decode().strip())
               cutoff = '"$CUTOFF_DATE"'
               if timestamp > cutoff:
                   return True
